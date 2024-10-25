@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>PROJECT: sum of arguments in javascript</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        var i=0;
+        var sum=0;
+        function myfunction(){
+            for(i=0;i<arguments.length;i++){
+                if (arguments[i]> sum){
+                    sum =arguments[i];
+                }
+            }
+            return sum;
+        }
+        document.getElementById("p1").innerHTML="The sum of 2, 7, 9, 5, 9 and 21 is "+myfunction(2+ 7+ 9+ 5+9+ 21)+".";
+    
+    </script>
+</body>
+</html>
